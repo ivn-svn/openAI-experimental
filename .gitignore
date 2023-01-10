@@ -1,0 +1,20 @@
+apikey.py
+# Virtual environment
+venv/
+pyvenv.cfg
+
+# Virtualenvwrapper
+.virtualenvs/
+
+# Virtualenv
+#   Assuming virtualenv was installed via `pip install virtualenv`
+#   If you installed virtualenv via `apt-get`, use the following instead:
+#   `lib/python*/site-packages/virtualenv*`
+lib/python*/site-packages/virtualenv*
+Lib
+Include
+Scripts
+pyvenv.cfg
+__pycache__
+myvenv 
+myenv 

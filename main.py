@@ -1,14 +1,12 @@
 import os
+import apikey 
 import openai
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = apikey.apikey_var
 
-response = openai.Completion.create(
-  model="text-davinci-003",
-  prompt="",
-  temperature=0.7,
-  max_tokens=256,
-  top_p=1,
-  frequency_penalty=0,
-  presence_penalty=0
-)
+
+
+response = openai.Completion.create(engine="davinci", prompt="Hello, my name is Bob. I am a software developer, and I love to write code. What about you?", temperature=0.5)
+
+# Print the generated text
+print(response.text)
